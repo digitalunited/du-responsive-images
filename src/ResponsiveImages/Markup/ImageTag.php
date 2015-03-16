@@ -5,7 +5,6 @@ use HtmlGenerator\HtmlTag;
 
 class ImageTag
 {
-
     private $settings;
 
     function __construct(Array $settings)
@@ -18,7 +17,7 @@ class ImageTag
         $img = $this->buildImgTag();
         $noScriptImg = $this->buildNoScriptImgTag();
 
-        $wrapperDiv = $this->buildWrapperDiv($img.$noScriptImg);
+        $wrapperDiv = $this->buildWrapperDiv($img . $noScriptImg);
 
         return $wrapperDiv;
     }

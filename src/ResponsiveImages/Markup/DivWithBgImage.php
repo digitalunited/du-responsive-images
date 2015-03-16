@@ -5,7 +5,6 @@ use HtmlGenerator\HtmlTag;
 
 class DivWithBgImage
 {
-
     private $settings;
 
     function __construct(Array $settings)
