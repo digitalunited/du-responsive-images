@@ -36,15 +36,15 @@ A WordPress attachment image id.
 
 ### Ratio (Optional)
 The following aspect ratios are available.
-- string "ratio-1x1"
-- string "ratio-2x1"
-- string "ratio-4x1"
-- string "ratio-4x3"
-- string "ratio-16x9"
-- string "ratio-1x2"
-- string "ratio-1x4"
-- string "ratio-3x4"
-- string "ratio-9x16"
+- string "1x1"
+- string "2x1"
+- string "4x1"
+- string "4x3"
+- string "16x9"
+- string "1x2"
+- string "1x4"
+- string "3x4"
+- string "9x16"
 
 ### Ratio (Only valid when "output = img-ratio" or "output = img")
 
