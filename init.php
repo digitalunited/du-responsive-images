@@ -24,8 +24,8 @@
 //});
 
 require __DIR__ . '/libs/aq_resizer.php';
-require __DIR__ . '/libs/php-html-generator/HtmlTag.php';
 require __DIR__ . '/libs/php-html-generator/Markup.php';
+require __DIR__ . '/libs/php-html-generator/HtmlTag.php';
 
 if (file_exists(__DIR__ . '/vendor/autoload.php')) {
     require __DIR__ . '/vendor/autoload.php';
