@@ -41,11 +41,14 @@ class ImageSource
         $imageHeight = $fullSizeImage[2];
 
         foreach ($this->sizes as $index => $width) {
-            $previousIndex = isset($this->sizes[$index - 1]) ? $index - 1 : 0;
-
-            //--$index so the last renderd image is full width if image is smaller then largest requested size.
-            if ($this->sizes[$previousIndex] < $imageWidth) {
+            if ($width < $imageWidth) {
                 $imageUrls[$width] = aq_resize($imageUrl, $width, $imageHeight);
+            }
+            else {
+                // Use $imageWidth - 1 so we always get a cropped image
+                $imageUrls[$width] = aq_resize($imageUrl, $imageWidth - 1, $imageHeight);
+
+                break; //I know this is bad.
             }
         }
 
