@@ -1,0 +1,7 @@
+*.log
+vendor
+index_cache
+.DS_store
+node_modules
+npm-debug.log
+assets/vendor
