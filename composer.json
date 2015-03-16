@@ -16,8 +16,8 @@
     }
   ],
   "type": "wordpress-plugin",
-  "repositories": [
-    {
+  "repositories": {
+    "syamilmj/Aqua-Resizer": {
       "type": "package",
       "package": {
         "name": "syamilmj/Aqua-Resizer",
@@ -28,12 +28,8 @@
           "reference": "origin/master"
         }
       }
-    },
-    {
-      "type": "git",
-      "url": "https://github.com/Airmanbzh/php-html-generator"
     }
-  ],
+  },
   "require": {
     "php": ">=5.4",
     "composer/installers": "~1.0",

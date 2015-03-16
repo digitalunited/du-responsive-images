@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ba4c6f7eceef6eee4a7cdfb6c5d19c5c",
+    "hash": "bbba19891540aa65726b1125996d31bb",
     "packages": [
         {
             "name": "airmanbzh/php-html-generator",
