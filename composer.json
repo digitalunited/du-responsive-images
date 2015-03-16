@@ -11,7 +11,7 @@
   "authors": [
     {
       "name": "Tim Samuelsson",
-      "email": "tim.samuelsson@careofhaus.se",
+      "email": "tim@careofhaus.se",
       "homepage": "http://careofhaus.se"
     }
   ],
@@ -37,7 +37,7 @@
   "require": {
     "php": ">=5.4",
     "composer/installers": "~1.0",
-    "syamilmj/Aqua-Resizer": "*",
+    "syamilmj/Aqua-Resizer": "1.0.0",
     "airmanbzh/php-html-generator": "dev-master"
   },
   "autoload": {
