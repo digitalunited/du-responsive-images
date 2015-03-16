@@ -6,6 +6,6 @@ class ResponsiveImage
     {
         $respImg = (new \DigitalUnited\ResponsiveImages\ResponsiveImages($settings));
 
-        return $respImg;
+        return $respImg->render();
     }
 }
