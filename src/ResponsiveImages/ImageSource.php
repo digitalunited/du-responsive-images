@@ -46,7 +46,8 @@ class ImageSource
             }
             else {
                 // Use $imageWidth - 1 so we always get a cropped image
-                $imageUrls[$width] = aq_resize($imageUrl, $imageWidth - 1, $imageHeight);
+                $maxWidth = $imageWidth - 1;
+                $imageUrls[$maxWidth] = aq_resize($imageUrl, $maxWidth, $imageHeight);
 
                 break; //I know this is bad.
             }
