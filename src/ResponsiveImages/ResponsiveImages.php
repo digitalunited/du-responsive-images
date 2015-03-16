@@ -2,6 +2,7 @@
 
 use DigitalUnited\ResponsiveImages\Markup\DivWithBgImage;
 use DigitalUnited\ResponsiveImages\Markup\ImageTag;
+use DigitalUnited\ResponsiveImages\Markup\SrcsetString;
 
 /**
  * Class ResponsiveImages
@@ -11,7 +12,7 @@ class ResponsiveImages
 {
     private $settings = [
         'sizes' => [
-            100, 200, 300, 400, 750, 1000, 1500, 2000
+            200, 300, 400, 600, 750, 1024, 1500, 2000
         ],
         'ratio' => '16x9',
         'imgAttributes' => [
@@ -52,6 +53,8 @@ class ResponsiveImages
                 return (new ImageTag($this->settings))->render();
             case 'div':
                 return (new DivWithBgImage($this->settings))->render();
+            case 'srcset':
+                return (new SrcsetString($this->settings))->render();
         }
 
         throw new \Exception('Select output-mode was not found');
