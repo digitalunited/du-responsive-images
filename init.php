@@ -23,7 +23,7 @@
 //    fclose($fh);
 //});
 
-require __DIR__ . '/vendor/syamilmj/Aqua-Resizer/aq_resizer.php';
+require __DIR__ . '/aq_resizer.php';
 
 if (file_exists(__DIR__ . '/vendor/autoload.php')) {
     require __DIR__ . '/vendor/autoload.php';
@@ -31,6 +31,8 @@ if (file_exists(__DIR__ . '/vendor/autoload.php')) {
 
 require __DIR__ . '/ResponsiveImage.php';
 
+//TODO Move to separate files.
+//TODO Rename css and js files
 function DuResponsiveImageStyles()
 {
     wp_register_style('custom-style', plugins_url('/assets/css/main.css', __FILE__), array(), '20120208', 'all');
