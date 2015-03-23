@@ -76,8 +76,10 @@ class ImageTag
         $fallbackImgUrl = (new ImageSource($this->settings['imgId']))
             ->getFallbackImgUrl();
 
+        $alt = isset($this->settings['imgAttributes']['alt']) ? $this->settings['imgAttributes']['alt'] : '';
         $img = HtmlTag::createElement('img')
             ->set('src', $fallbackImgUrl)
+            ->set('alt', $alt)
             ->set('class', 'du-resp-img');
 
         $noScript = HtmlTag::createElement('noscript');

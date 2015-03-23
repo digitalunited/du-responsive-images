@@ -18,6 +18,7 @@ class ResponsiveImages
         'imgAttributes' => [
             'class' => ['du-resp-img', 'lazyload'],
             'data-sizes' => 'auto',
+            'alt' => '',
             'src' => 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='
         ],
         'wrapperAttributes' => [

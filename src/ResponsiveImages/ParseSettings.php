@@ -29,8 +29,6 @@ class ParseSettings
             case 'divWithBgImageAttributes':
                 foreach ($this->settings[$settingKey] as $attributeKey => $stdSetting) {
                     $this->settings[$settingKey][$attributeKey] = $this->mergeWithStdSettingsIfClass($attributeKey, $setting, $stdSetting);
-
-                    $this->unsetEmptyAttributes($settingKey, $attributeKey);
                 }
                 break;
             default:
@@ -45,17 +43,6 @@ class ParseSettings
         }
 
         return isset($setting[$attributeKey]) ? $setting[$attributeKey] : $stdSetting;
-    }
-
-    /**
-     * @param $settingKey
-     * @param $attributeKey
-     */
-    private function unsetEmptyAttributes($settingKey, $attributeKey)
-    {
-        if (empty($this->settings[$settingKey][$attributeKey])) {
-            unset($this->settings[$settingKey][$attributeKey]);
-        }
     }
 
     public function getSettings()
