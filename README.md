@@ -22,7 +22,7 @@ TODO
     'divWithBgImageAttributes' => [
         'class' => ['cover']
     ]
-])->render();
+]);
 ```
 
 ##Options
@@ -33,6 +33,8 @@ A WordPress attachment image id.
 ### Output (All is not implemented yet)
 - img: Regular img-tag (Not implemented, yet)
 - img: Regular img wrapped in a div with kept aspect-ratio. The img behaves normal if the ratio setting is omitted.
+- div: Div with srcset
+- srcset: For usage in "data-srcset"-tag
 
 ### Ratio (Optional)
 The following aspect ratios are available.
