@@ -42,7 +42,7 @@ module.exports = function (grunt) {
                     separator: ';'
                 },
                 src: [jsFileList],
-                dest: 'assets/js/scripts.js'
+                dest: 'assets/js/scripts.min.js'
             }
         },
         uglify: {

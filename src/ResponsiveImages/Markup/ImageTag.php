@@ -69,6 +69,10 @@ class ImageTag
     private function applyRatioSettingOnWrapper()
     {
         $this->settings['wrapperAttributes']['class'][] = 'du-ratio-' . $this->settings['ratio'];
+
+        if ($this->settings['ratio'] !== 'none') {
+            $this->settings['wrapperAttributes']['class'][] = 'has-ratio';
+        }
     }
 
     private function buildNoScriptImgTag()
