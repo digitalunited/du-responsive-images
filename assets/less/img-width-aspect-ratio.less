@@ -1,32 +1,35 @@
 .no-js .du-resp-img.lazyload {
-    display: none;
+  display: none;
 }
 
 .du-resp-img-ratio-wrapper {
-    display: block;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 0;
+
+  &.has-ratio .du-resp-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     width: 100%;
-    overflow: hidden;
-    position: relative;
-    height: 0;
+    margin: auto;
+  }
 
-    &.has-ratio {
-        .du-resp-img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            width: 100%;
-            margin: auto;
-        }
-    }
+  &.has-ratio.du-ratio-1x1 .du-resp-img {
+    height: 100%;
+  }
+  
+  &.du-ratio-none {
+    height: auto;
 
-    &.du-ratio-none {
-        height: auto;
-        .du-resp-img {
-            position: static;
-            width: 100%;
-            display: block;
-        }
+    .du-resp-img {
+      position: static;
+      width: 100%;
+      display: block;
     }
+  }
 }

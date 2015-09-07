@@ -1,54 +1,11 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
     "hash": "52d2351c9f0b8a91aae07449e102d15b",
     "packages": [
-        {
-            "name": "airmanbzh/php-html-generator",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Airmanbzh/php-html-generator.git",
-                "reference": "226f4dff05c303cee153a8eb326b19368dfdfeca"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Airmanbzh/php-html-generator/zipball/226f4dff05c303cee153a8eb326b19368dfdfeca",
-                "reference": "226f4dff05c303cee153a8eb326b19368dfdfeca",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "type": "package",
-            "autoload": {
-                "psr-4": {
-                    "HtmlGenerator\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "LE BOULC'H Brice",
-                    "email": "airmanbzh@gmail.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "PHP html generator",
-            "homepage": "https://github.com/Airmanbzh/php-html-generator",
-            "keywords": [
-                "generator",
-                "html",
-                "php"
-            ],
-            "time": "2014-11-03 08:34:59"
-        },
         {
             "name": "composer/installers",
             "version": "v1.0.21",
