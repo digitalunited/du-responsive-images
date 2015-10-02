@@ -6,6 +6,10 @@ TODO
 ##How?!?
 TODO
 
+##Libs
+- https://github.com/aFarkas/lazysizes
+- https://github.com/syamilmj/Aqua-Resizer
+
 ##Useage
 ```php
 \DigitalUnited\ResponsiveImage::render([
