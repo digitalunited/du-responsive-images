@@ -6,9 +6,11 @@ module.exports = function (grunt) {
     require('time-grunt')(grunt);
 
     var jsFileList = [
-        'assets/vendor/lazysizes/plugins/bgset/ls.bgset.js',
         'assets/vendor/lazysizes/lazysizes.js',
+        'assets/vendor/lazysizes/plugins/bgset/ls.bgset.js',
         'assets/vendor/lazysizes/plugins/respimg/ls.respimg.js',
+        'assets/vendor/lazysizes/plugins/parent-fit/ls.parent-fit.js',
+        'assets/vendor/lazysizes/plugins/optimumx/ls.optimumx.js',
         'assets/js/_*.js'
     ];
 
